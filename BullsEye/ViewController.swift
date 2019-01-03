@@ -33,4 +33,3 @@ class ViewController: UIViewController {
         currentValue = Int(slider.value)
     }
 }
-
