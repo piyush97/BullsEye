@@ -25,15 +25,5 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
 
-    @IBAction func KnockKnock() {
-        let alert = UIAlertController(title: "Knock, Knock", message: "Who's There?", preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "Piyush Mehta", style: .default, handler: nil)
-        
-        alert.addAction(action)
-        
-        present(alert, animated: true, completion: nil)
-    }
-
 }
 
