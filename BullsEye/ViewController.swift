@@ -11,9 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     var currentValue: Int = 50
     var targetValue: Int = 0
+    var score = 0
     
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var targetLabel: UILabel!
+    @IBOutlet weak var ScoreLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let roundedValue = slider.value.rounded()
@@ -24,6 +27,8 @@ class ViewController: UIViewController {
     @IBAction func showAlert() {
         
         let difference = abs(targetValue - currentValue)
+        let points = 100 - difference
+        score += points
 
         let message = "The value of the slider is now: \(currentValue)\n the target value is \(targetValue) \n difference is \(difference)"
 
