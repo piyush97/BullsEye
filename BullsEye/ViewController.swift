@@ -23,11 +23,7 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert() {
         
-        var difference = currentValue - targetValue
-        
-        if difference < 0 {
-            difference = -difference
-        }
+        let difference = abs(targetValue - currentValue)
 
         let message = "The value of the slider is now: \(currentValue)\n the target value is \(targetValue) \n difference is \(difference)"
 
