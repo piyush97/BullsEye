@@ -77,7 +77,7 @@ class ViewController: UIViewController {
     
  @IBAction func startNewGame() {
         score = 0
-        roundNumber = 0
+        roundNumber = 1
         startNewRound()
     }
     
